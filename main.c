@@ -4,20 +4,17 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int x, y, z, m;
-	int a, b, c;
+	int a, b;
+	 
+	printf("input two integer : ");
+	scanf("%i %i", &a, &b);
 	
-	x = 2;
-	z = 1;
-	a = 3;
-	b = 4;
-	c = 5;
+	printf("%i + %i = %i \n", a, b, a+b);
+	printf("%i - %i = %i \n", a, b, a-b);
+	printf("%i * %i = %i \n", a, b, a*b);
+	printf("%i / %i = %i \n", a, b, a/b);
+	printf("%i %% %i = %i \n", a, b, a%b);
 	
-	y = a*x*x + b*x + c;
-	
-	m = (x+y+z) / 3;
-	
-	printf("y=%d, m=%d", y, m);
 	system("PAUSE");
 	return 0;
 }
